@@ -5,4 +5,29 @@ body {
     margin: 0;
     background: linear-gradient(125deg, rgb(143, 4, 108), rgb(3, 189, 173));
     color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+form {
+    margin: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.466);
+}
+fieldset:last-of-type {
+    border-bottom: none;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
 }
