@@ -1,5 +1,6 @@
 # html-css
- <h1>Projetos em HTML5 e CSS3</h1>
+ <h1>Projects in HTML5 and CSS3</h1>
+ <p>This repository contains projects develop starting about my studies for training.</p>
  
  <a href="https://matheuslmarchetti.github.io/html-css/ola-mundo/" target="_blank">Projeto Olá Mundo!</a>
 
