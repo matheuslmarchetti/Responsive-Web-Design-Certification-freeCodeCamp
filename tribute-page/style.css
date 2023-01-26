@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+main {
+    margin: 0;
+}
+#image {
+    max-width: 500px;
+    max-height: 500px;
+}
