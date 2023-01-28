@@ -7,15 +7,18 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    background-color: #8C8C8C;
+    color: #000000;
 }
 main {
     flex: 1 0 auto;
     margin: 0 auto;
-    width: 80vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #img-div {
-    background-color: black;
+    padding: 15px 10px 10px;
 }
 #image {
     max-width: 300px;
@@ -42,4 +45,10 @@ footer {
 }
 footer > p {
     color: white;
+}
+a {
+    color: #D9D9D9;
+}
+a:hover {
+    color: #334037;
 }
