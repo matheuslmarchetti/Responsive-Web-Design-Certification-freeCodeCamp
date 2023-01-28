@@ -10,6 +10,6 @@
 
  <a href="https://matheuslmarchetti.github.io/html-css/survey-form/" target="_blank">Survey Form</a>
 
-  <a href="https://matheuslmarchetti.github.io/html-css/quiz/" target="_blank">Survey Form</a>
+  <a href="https://matheuslmarchetti.github.io/html-css/quiz/" target="_blank">Quiz</a>
 
-   <a href="https://matheuslmarchetti.github.io/html-css/tribute-page/" target="_blank">Survey Form</a>
+   <a href="https://matheuslmarchetti.github.io/html-css/tribute-page/" target="_blank">Tribute Page</a>
