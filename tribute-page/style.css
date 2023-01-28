@@ -41,6 +41,7 @@ ul {
 }
 li{
     margin: 16px 0;
+    text-align: justify;
     font-size: medium;
 }
 .more-information {
