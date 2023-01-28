@@ -21,7 +21,8 @@ main {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #img-div {
-    padding: 15px 10px 10px;
+    padding: 0;
+    background-color: #ED1B28;
 }
 #image {
     display: block;
@@ -32,6 +33,7 @@ main {
 }
 #img-caption {
     font-size: smaller;
+    background-color: #8C8C8C;
 }
 #tribute-info {
     width: 100%;
@@ -39,7 +41,9 @@ main {
 ul {
     max-width: 550px;
     margin: 0 20px 50px 20px;
+    padding-left: 100px;
     text-align: left;
+    text-align: justify;
     line-height: 1.6;
 }
 li{
