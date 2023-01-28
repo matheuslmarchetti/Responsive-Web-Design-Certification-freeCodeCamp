@@ -49,7 +49,7 @@ li{
 footer {
     flex-shrink: 0;
     margin: 0;
-    padding: 0.5px 0;
+    padding: 0;
     background-color: black;
 }
 footer > p {
