@@ -27,6 +27,9 @@ main {
     max-width: 300px;
     height: 300px;
 }
+#img-caption {
+    font-size: smaller;
+}
 #tribute-info {
     width: 100%;
 }
