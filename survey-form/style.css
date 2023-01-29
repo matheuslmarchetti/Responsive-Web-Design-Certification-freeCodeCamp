@@ -58,6 +58,7 @@ input[type="submit"] {
 footer {
     margin: 0;
     background: rgb(0, 0, 0);
+    color:#a200ff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     text-align: center;
