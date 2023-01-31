@@ -162,6 +162,10 @@ footer > p {
     margin-left: -10px;
   }
 
+  #navbar {
+    border-bottom: none;
+  }
+
   code {
     margin-left: -20px;
     width: 100%;
