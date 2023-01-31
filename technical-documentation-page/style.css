@@ -92,6 +92,10 @@ code {
   border-radius: 5px;
 }
 
+img {
+    max-width: 400px;
+}
+
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
   #navbar ul {
@@ -117,6 +121,10 @@ code {
     margin-left: 0px;
     margin-top: 270px;
   }
+  
+  img {
+    max-width: 415px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -131,5 +139,9 @@ code {
     padding-left: 10px;
     padding-right: 45px;
     min-width: 233px;
+  }
+
+  img {
+    max-width: 200px;
   }
 }
