@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Technical Documentation Page</title>
 </head>
 <body>
@@ -39,19 +40,19 @@
             <p>This page is my third project for obtaining the (New) Responsive Web Design Certification of the freeCodeCamp. So the content of this page is a summary about CSS Documentation.</p>
         </section>
         <section class="main-section" id="CSS_Introduction">
-            <header>CSS Introduction</header>
+            <header><h2>CSS Introduction</h2></header>
             <p>CSS is the language we use to style a Web page.</p>
             <article>
-                <h2>What is CSS?</h2>
+                <h3>What is CSS?</h3>
                 <ul>
                     <li>CSS stands for Cascading Style Sheets</li>
                     <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
                     <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
                     <li>External stylesheets are stored in CSS files</li>
                 </ul>
-                <h2>Why Use CSS?</h2>
+                <h3>Why Use CSS?</h3>
                 <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
-                <h3>CSS Example</h3>
+                <h4>CSS Example</h4>
                 <code>
                     body {
                     background-color: lightblue;
@@ -70,13 +71,28 @@
             </article>
         </section>
         <section class="main-section" id="CSS_Syntax">
-            <header>CSS Syntax</header>
+            <header><h2>CSS Syntax</h2></header>
+            <p>A CSS rule consists of a selector and a declaration block.</p>
             <article>
-                <p></p>
-                <p></p>
-                <code></code>
+                <h3>CSS Syntax</h3>
+                <img src="https://www.w3schools.com/css/img_selector.gif" alt="Image about CSS Syntax">
+                <p>The selector points to the HTML element you want to style.</p>
+                <p>The declaration block contains one or more declarations separated by semicolons.</p>
+                <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+                <h4>Example</h4>
+                <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+                <code>
+                    p {
+                    color: red;
+                    text-align: center;
+                  }
+                </code>
+                <h4>Example Explained</h4>
                 <ul>
-                    <li></li>
+                    <li>
+                        <code>p</code> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).
+                    </li>
                 </ul>
             </article>
         </section>
