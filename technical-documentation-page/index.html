@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/simbolo-veloolve-28x28.ico" type="image/x-icon">
     <title>Technical Documentation Page</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
             <li>
                 <a class="nav-link" href="#CSS_Comments">CSS Comments</a>
             </li>
-            <li>
+            <li class="reference">
                 <a class="nav-link" href="#Reference">Reference</a>
             </li>
         </ul>
@@ -56,27 +57,15 @@
                 <h4>CSS Example</h4>
                 <code>
                     body {
-                    <br>
                     background-color: lightblue;
-                    <br>
                   }
-                  <br>
-                  <br>                  
                   h1 {
-                    <br>
                     color: white;
-                    <br>
                     text-align: center;
-                    <br>
                   }
-                  <br>
-                  <br>                  
                   p {
-                    <br>
                     font-family: verdana;
-                    <br>
                     font-size: 20px;
-                    <br>
                   }
                 </code>
             </article>
@@ -95,23 +84,20 @@
                 <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
                 <code>
                     p {
-                    <br>
                     color: red;
-                    <br>
                     text-align: center;
-                    <br>
                   }
                 </code>
                 <h4>Example Explained</h4>
                 <ul>
                     <li>
-                        <code>p</code> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).
+                        <code class="code-in-the-text">p</code> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).
                     </li>
                     <li>
-                        <code>color</code> is a property, and <code>red</code> is the property value
+                        <code class="code-in-the-text">color</code> is a property, and <code class="code-in-the-text">red</code> is the property value
                     </li>
                     <li>
-                        <code>text-align</code> is a property, and <code>center</code> is the property value
+                        <code class="code-in-the-text">text-align</code> is a property, and <code class="code-in-the-text">center</code> is the property value
                     </li>
                 </ul>
             </article>
@@ -147,11 +133,8 @@
                 <p>Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color:</p>
                 <code>
                     p {
-                    <br>
                     text-align: center;
-                    <br>
                     color: red;
-                    <br>
                   }
                 </code>
             </article>
@@ -174,25 +157,14 @@
                 <p>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page:</p>
                 <code>
                     &lt;!DOCTYPE html&gt;
-                    <br>
                     &lt;html&gt;
-                    <br>
                     &lt;head&gt;
-                    <br>
                     &lt;link rel="stylesheet" href="mystyle.css"&gt;
-                    <br>
                     &lt;/head&gt;
-                    <br>
                     &lt;body&gt;
-                    <br>
-                    <br>
                     &lt;h1&gt;This is a heading&lt;/h1&gt;
-                    <br>
                     &lt;p&gt;This is a paragraph.&lt;/p&gt;
-                    <br>
-                    <br>
                     &lt;/body&gt;
-                    <br>
                     &lt;/html&gt;
                 </code>
             </article>
@@ -204,15 +176,12 @@
                 <h3>CSS Comments</h3>
                 <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
                 <p>Comments are ignored by browsers.</p>
-                <p>A CSS comment is placed inside the <code>&lt;style&gt;</code> element, and starts with <code>/*</code> and ends with <code>*/</code>:</p>
+                <p>A CSS comment is placed inside the <code class="code-in-the-text">&lt;style&gt;</code> element, and starts with <code class="code-in-the-text">/*</code> and ends with <code class="code-in-the-text">*/</code>:</p>
                 <h4>Example</h4>
                 <code>
                     /* This is a single-line comment */
-                    <br>
                     p {
-                    <br>
                       color: red;
-                    <br>
                     }
                 </code>
             </article>
@@ -220,14 +189,14 @@
         <section class="main-section" id="Reference">
             <header><h2>Reference</h2></header>
             <article>
-                <p>
-                    <ul>
-                        <li>All the documentation in this page is taken from</li>
-                    </ul>
-                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools</a>
-                </p>
+                <ul>
+                    <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools</a></li>
+                </ul>
             </article>
         </section>
-    </main>    
+    </main>
+    <footer>
+        <p>Developed by Matheus L. Marchetti | <a href="https://github.com/matheuslmarchetti/html-css">Back to Github</a></p>
+    </footer>    
 </body>
 </html>
