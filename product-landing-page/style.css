@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-/*header*/
+/*HEADER*/
 #header {
     display: flex;
     position: fixed;
@@ -36,7 +36,7 @@ body {
     padding: 10px;
 }
 
-/*main*/
+/*MAIN*/
 main {
     display: block;
     margin: 100px auto 0 auto;
@@ -133,4 +133,32 @@ li > img {
 .product > button {
     display: block;
     margin: 50px auto 50px auto;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+}
+
+footer > div {
+    display: flex;
+    justify-content: flex-end;
+}
+footer > div > a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer > p {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: red;
 }
