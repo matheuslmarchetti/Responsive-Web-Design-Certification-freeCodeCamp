@@ -7,17 +7,30 @@
     <title>Product Landing Page</title>
 </head>
 <body>
+    <header id="header">
+        <img src="" alt="Logo VeloolVe" id="header-img">
+        <nav id="nav-bar">
+            <a href="" class="nav-link">Features</a>
+            <a href="" class="nav-link">How It Works</a>
+            <a href="" class="nav-link">Pricing</a>
+        </nav>
+    </header>
     <main>
-        <header id="header">
-            <img src="" alt="Logo VeloolVe" id="header-img">
-            <nav id="nav-bar">
-                <a href="" class="nav-link">Features</a>
-                <a href="" class="nav-link">How It Works</a>
-                <a href="" class="nav-link">Pricing</a>
-            </nav>
-        </header>
-        <section id="form"></section>
-        <section id="features"></section>
+        <section class="form">
+            <form action="https://www.freecodecamp.com/email-submit" method="get" id="form">
+                <fieldset>
+                    <label for="email" id="email-label">
+                        Email <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Request Contact" id="submit">
+            </form>
+        </section>
+        <section class="features"></section>
+        <section class="how_it_works">
+            <video src="" id="video"></video>
+        </section>
+        <section class="pricing"></section>
     </main>
     
 </body>
