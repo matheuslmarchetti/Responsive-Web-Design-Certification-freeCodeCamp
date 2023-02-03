@@ -1,0 +1,53 @@
+*{
+    background-color: rgb(49, 47, 47);
+    color: red;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+#header {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    min-height: 50px;
+}
+
+#header-img {
+    width: 100%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#nav-bar {
+    display: flex;
+}
+
+.nav-link {
+    padding: 10px;
+}
+
+/*main*/
+main {
+    display: block;
+    margin: 100px auto 0 auto;
+}
+section {
+    text-align: center;
+    width: 60vw;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.description {
+    font-size: 1.5rem;
+    padding: 20px 0 50px 0;
+}
