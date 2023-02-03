@@ -1,6 +1,6 @@
 *{
-    background-color: rgb(49, 47, 47);
-    color: red;
+    background-color: rgb(235, 224, 224);
+    color: rgb(19, 16, 16);
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
 }
@@ -47,7 +47,39 @@ section {
     margin-left: 200px;
     margin-right: 200px;
 }
+
 .description {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 20px 0 50px 0;
+}
+
+.form {
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+#email {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid gray;
+    padding: 5px 0 5px 0;
+    margin: 10px auto 10px auto;
+}
+
+#submit {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    font-size: 1rem;
 }
