@@ -1,0 +1,171 @@
+*{
+    background-color: rgb(182, 176, 176);
+    color: rgb(5, 5, 5);
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+#header {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+    min-height: 50px;
+}
+
+#header-img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#nav-bar {
+    display: flex;
+}
+
+.nav-link {
+    padding: 10px;
+}
+
+/*MAIN*/
+main {
+    display: block;
+    margin: 100px auto 0 auto;
+}
+section {
+    text-align: center;
+    width: 60vw;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.description {
+    font-size: 1rem;
+    padding: 20px 0 50px 0;
+}
+
+.form {
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+#email {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid rgb(119, 119, 119);
+    padding: 5px 0 5px 0;
+    margin: 10px auto 10px auto;
+    background-color: rgb(27, 27, 27);
+}
+
+#submit {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 10px 0 10px 0;
+}
+
+li > img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.product {
+    width: 350px;
+    height: 200px;
+    border: 1px solid black;
+}
+.product > h2 {
+    font-size: 0.9rem;
+}
+
+.product > h3 {
+    display: block;
+    font-size: 1rem;
+    margin: 50px auto 50px auto;
+}
+
+.product > button {
+    display: block;
+    margin: 50px auto 50px auto;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+}
+
+footer > div {
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    justify-content: flex-end;
+}
+footer > div > a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer > p {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: red;
+    background-color: black;
+}
