@@ -70,7 +70,7 @@ label {
 #email {
     display: block;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     border: 1px solid gray;
     padding: 5px 0 5px 0;
     margin: 10px auto 10px auto;
@@ -81,5 +81,28 @@ label {
     cursor: pointer;
     background-color: red;
     border: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 10px 0 10px 0;
+}
+
+li > img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
