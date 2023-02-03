@@ -181,7 +181,7 @@ footer > p > a {
         display: block;
         margin: auto;
     }
-    #video > iframe {
+    #div-video > iframe {
         width: auto;
         height: auto;
     }
