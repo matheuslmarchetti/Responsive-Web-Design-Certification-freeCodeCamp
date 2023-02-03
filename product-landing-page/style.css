@@ -1,6 +1,6 @@
 *{
-    background-color: rgb(235, 224, 224);
-    color: rgb(19, 16, 16);
+    background-color: rgb(182, 176, 176);
+    color: rgb(5, 5, 5);
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
 }
@@ -71,9 +71,10 @@ label {
     display: block;
     width: 100%;
     max-width: 350px;
-    border: 1px solid gray;
+    border: 1px solid rgb(119, 119, 119);
     padding: 5px 0 5px 0;
     margin: 10px auto 10px auto;
+    background-color: rgb(27, 27, 27);
 }
 
 #submit {
@@ -145,6 +146,8 @@ footer {
 
 footer > div {
     display: flex;
+    position: relative;
+    bottom: 10px;
     justify-content: flex-end;
 }
 footer > div > a {
@@ -154,11 +157,16 @@ footer > div > a {
 
 footer > p {
     display: flex;
+    width: 100%;
+    position: absolute;
     align-items: flex-end;
     justify-content: center;
+    background-color: black;
+    color: white;
 }
 
 footer > p > a {
     text-decoration: none;
     color: red;
+    background-color: black;
 }
