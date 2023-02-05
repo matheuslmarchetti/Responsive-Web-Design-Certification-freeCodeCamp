@@ -76,14 +76,14 @@ a:hover {
     width: 100%;
     background: white;
     border-left: 2px solid var(--link-page);
-    animation: welcome 6s steps(50) infinite normal;
+    animation: welcome 6s steps(40) infinite normal;
     white-space: nowrap;
 }
 
 @keyframes welcome {
     100% {
         left: 100%;
-        margin-left: 12px;
+        margin-left: 20px;
     }
 }
 
@@ -99,4 +99,5 @@ a:hover {
 #welcome-section > p {
     max-width: 61vw;
     text-align: center;
+    font-style: italic;
 }
