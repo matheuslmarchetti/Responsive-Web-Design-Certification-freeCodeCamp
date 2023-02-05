@@ -7,9 +7,8 @@
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: inherit;
     font-family: Jost, sans-serif;
-    overflow-x: hidden;
 }
 body {
     margin: 0;
@@ -37,7 +36,6 @@ header {
 #navbar {
     position: absolute;
     right: 1%;
-    overflow-y: hidden;    
 }
 
 .nav-link {
@@ -102,4 +100,26 @@ a:hover {
     text-align: center;
     font-style: italic;
 }
-/* End welcome section */
+/* End Welcome Section */
+/* Start Projects Section */
+#projects{
+    text-align: center;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.img-projects {
+    display: flex;
+    max-width: 500px;
+    height: auto;
+}
+/* End Projects Section */
