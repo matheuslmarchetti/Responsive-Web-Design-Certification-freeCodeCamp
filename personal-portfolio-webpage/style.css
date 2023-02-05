@@ -1,10 +1,17 @@
 /* Global Configuration */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --link-page: black;
+    --link-page-hover: red;
+}
+
 * {
+    box-sizing: border-box;
+}
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Header Configuration */
@@ -15,28 +22,33 @@ header {
     align-items: center;
     top: 0;
     width: 100vw;
+    min-height: 100px;
+    max-height: 100px;
 }
-#navbar {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     width: 100px;
     height: 100px;
+    position: absolute;
+    left: 1%;
 }
 
-.nav-list {
-    list-style: none;
-    display: flex;
+#navbar {
+    position: absolute;
+    right: 1%;    
+}
+
+.nav-link {
+    padding: 10px;
+    font-family: Jost, sans-serif;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
+    color: var(--link-page);
 }
 
-/* Main Configuration */
-main {
-    display: block;
-    margin-top: 300px;
+a:hover {
+    color: var(--link-page-hover);
 }
