@@ -66,6 +66,7 @@ a:hover {
 }
 .dynamic-txts span {
     position: relative;
+    animation: cursor 500ms infinite normal;
 }
 .dynamic-txts span::after {
     content: "";
@@ -75,13 +76,23 @@ a:hover {
     width: 100%;
     background: white;
     border-left: 2px solid var(--link-page);
-    animation: welcome 6s steps(50) infinite;
+    animation: welcome 6s steps(50) infinite normal;
+    white-space: nowrap;
 }
 
 @keyframes welcome {
     100% {
         left: 100%;
-        margin: 0 -16px 0 16px;
+        margin-left: 12px;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left-color: var(--link-page);
+    }
+    100% {
+        border-left-color: transparent;
     }
 }
 
