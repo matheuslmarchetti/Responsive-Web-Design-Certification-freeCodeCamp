@@ -8,6 +8,8 @@
 
 * {
     box-sizing: border-box;
+    font-family: Jost, sans-serif;
+    overflow-x: hidden;
 }
 body {
     margin: 0;
@@ -34,12 +36,12 @@ header {
 
 #navbar {
     position: absolute;
-    right: 1%;    
+    right: 1%;
+    overflow-y: hidden;    
 }
 
 .nav-link {
     padding: 10px;
-    font-family: Jost, sans-serif;
     font-size: 2em;
     cursor: pointer;
 }
@@ -62,6 +64,27 @@ a:hover {
     width: 100%;
     height: 100vh;
 }
+.dynamic-txts span {
+    position: relative;
+}
+.dynamic-txts span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 2px solid var(--link-page);
+    animation: welcome 6s steps(50) infinite;
+}
+
+@keyframes welcome {
+    100% {
+        left: 100%;
+        margin: 0 -16px 0 16px;
+    }
+}
+
 #welcome-section > p {
     max-width: 61vw;
     text-align: center;
