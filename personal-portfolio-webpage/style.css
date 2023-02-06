@@ -150,7 +150,7 @@ a:hover {
     height: auto;
 }
 
-.project-title {
+.project-tile {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -278,7 +278,7 @@ footer {
         height: auto;
     }
 
-    .project-title {
+    .project-tile {
         font-size: 1.2rem;
     }
 /* End Projects Section */
