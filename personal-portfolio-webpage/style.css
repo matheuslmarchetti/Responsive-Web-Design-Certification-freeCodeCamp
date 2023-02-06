@@ -204,8 +204,8 @@ footer {
 /* End Footer */
 /*CSS MOBILE*/
 @media only screen and (max-width: 900px) {
-    * {
-        overflow: hidden;
+    body {
+        overflow-x: hidden;
     }
     /* Header Configuration */
     header {
