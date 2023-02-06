@@ -223,7 +223,7 @@ footer {
     }
 
     #navbar {
-        position: fixed;
+        position: absolute;
         right: 0;
         animation: none;
     }
