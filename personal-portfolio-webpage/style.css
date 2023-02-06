@@ -25,6 +25,7 @@ header {
     width: 100vw;
     min-height: 100px;
     max-height: 100px;
+    background-color: white;
 }
 .logo {
     width: 100px;
@@ -35,7 +36,7 @@ header {
 
 #navbar {
     position: absolute;
-    right: 1%;
+    right: 5%;
 }
 
 .nav-link {
@@ -65,7 +66,6 @@ a:hover {
 }
 .dynamic-txts span {
     position: relative;
-    animation: cursor 500ms infinite normal;
 }
 .dynamic-txts span::after {
     content: "";
@@ -86,15 +86,6 @@ a:hover {
     }
 }
 
-@keyframes cursor {
-    0% {
-        border-left-color: var(--link-page);
-    }
-    100% {
-        border-left-color: transparent;
-    }
-}
-
 #welcome-section > p {
     max-width: 61vw;
     text-align: center;
@@ -106,6 +97,11 @@ a:hover {
     text-align: center;
     width: 100%;
     height: calc(100% - 100px);
+    padding-top: 100px;
+}
+
+#projects h2 {
+    font-size: 2rem;
 }
 
 .grid-projects {
@@ -117,9 +113,30 @@ a:hover {
     margin: 0 auto;
 }
 
+.link-projects {
+    border: 1px solid var(--link-page-hover);
+}
+
 .img-projects {
-    display: flex;
     max-width: 500px;
     height: auto;
+    padding-top: 20px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 /* End Projects Section */
+/* Start Contact Section */
+.contact-section-header {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-links {
+    text-align: center;
+    list-style: none;
+}
+/* End Contact Section */
