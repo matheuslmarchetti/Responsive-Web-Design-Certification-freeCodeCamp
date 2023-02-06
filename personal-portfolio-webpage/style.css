@@ -255,7 +255,7 @@ footer {
     }
     .dynamic-txts span::after {
         display: block;
-        animation: welcome 6s 1s steps(30) infinite normal;
+        animation: welcome 6s 1s steps(30) 1 normal;
     }
     @keyframes welcome {
         100% {
