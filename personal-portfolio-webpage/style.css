@@ -204,6 +204,34 @@ footer {
 /* End Footer */
 /*CSS MOBILE*/
 @media only screen and (max-width: 900px) {
+    /* Header Configuration */
+    header {
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        min-height: 70px;
+        max-height: 70px;
+    }
+.logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0%;
+}
+
+#navbar {
+    position: absolute;
+    right: 0%;
+}
+
+.nav-link {
+    padding: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
     /* Start Welcome Section */
     #welcome-section {
         padding-top: 150px;
