@@ -225,6 +225,7 @@ footer {
     #navbar {
         position: fixed;
         right: 5%;
+        animation: none;
     }
 
     .nav-link {
