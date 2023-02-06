@@ -39,7 +39,7 @@ header {
 }
 
 #navbar {
-    position: absolute;
+    position: fixed;
     right: 5%;
 }
 
@@ -150,7 +150,7 @@ a:hover {
     height: auto;
 }
 
-.project-title {
+.project-tile {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -223,7 +223,7 @@ footer {
     }
 
     #navbar {
-        position: absolute;
+        position: fixed;
         right: 0%;
     }
 
@@ -278,7 +278,7 @@ footer {
         height: auto;
     }
 
-    .project-title {
+    .project-tile {
         font-size: 1.2rem;
     }
 /* End Projects Section */
