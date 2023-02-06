@@ -39,7 +39,7 @@ header {
 }
 
 #navbar {
-    position: absolute;
+    position: fixed;
     right: 5%;
 }
 
@@ -223,7 +223,7 @@ footer {
     }
 
     #navbar {
-        position: absolute;
+        position: fixed;
         right: 0%;
     }
 
