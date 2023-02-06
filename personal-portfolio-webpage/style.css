@@ -215,23 +215,23 @@ footer {
         min-height: 70px;
         max-height: 70px;
     }
-.logo {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 0%;
-}
+    .logo {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0%;
+    }
 
-#navbar {
-    position: absolute;
-    right: 0%;
-}
+    #navbar {
+        position: absolute;
+        right: 0%;
+    }
 
-.nav-link {
-    padding: 5px;
-    font-size: 1em;
-    cursor: pointer;
-}
+    .nav-link {
+        padding: 5px;
+        font-size: 1em;
+        cursor: pointer;
+    }
     /* Start Welcome Section */
     #welcome-section {
         padding-top: 150px;
@@ -243,32 +243,39 @@ footer {
         height: 100px;
     }
 
-.dynamic-txts span {
-    display: flex ;
-    font-size: 0.5em;
-}
-.dynamic-txts span::after {
-    display: flex;
-}
+    .dynamic-txts span {
+        display: flex ;
+        font-size: 0.5em;
+    }
+    .dynamic-txts span::after {
+        display: flex;
+    }
 
-#welcome-section > p {
-    font-size: 0.9em;
-}
+    #welcome-section > p {
+        font-size: 0.9em;
+    }
 /* End Welcome Section */
 /* Start Projects Section */
+    #projects {
+        display: flex;
+        position: relative;
+        height: auto;
+        flex-direction: column;
+    }
     #projects h2 {
         font-size: 2em;
         color: var(--color-tertiary);
     }
 
     .grid-projects {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
         grid-gap: 2rem;
         width: 90%;
     }
 
     .img-projects {
         max-width: 300px;
+        height: auto;
     }
 
     .project-title {
@@ -276,16 +283,32 @@ footer {
     }
 /* End Projects Section */
 /* Start Contact Section */
-.contact-section-header {
-    font-size: 2em;
-}
+    #contact {
+        display: flex;
+        position: relative;
+        height: auto;
+        flex-direction: column;
+    }
+    .contact-section-header {
+        font-size: 2em;
+    }
 
-.contact-links {
-    font-size: 1em;
-}
+    .contact-links {
+        font-size: 1em;
+    }
 
-.icons {
-    max-width: 30px;
-}
+    .icons {
+        max-width: 30px;
+    }
 /* End Contact Section */
+/* Start Footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+    }
+/* End Footer */
 }
