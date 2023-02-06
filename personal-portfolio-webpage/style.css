@@ -236,6 +236,7 @@ footer {
     /* Start Welcome Section */
     #welcome-section {
         padding-top: 150px;
+        height: calc(100% - 100px);
     }
 
     .profile-picture {
@@ -246,16 +247,16 @@ footer {
     .dynamic-txts span {
         display: inline-flex ;
         position: relative;
-        height: auto;
         max-width: 100%;
         font-size: 0.5em;
     }
     .dynamic-txts span::after {
         display: block;
+        animation: welcome 6s 1s steps(30) infinite normal;
     }
     @keyframes welcome {
         100% {
-            left: 99%;
+            left: 100%;
         }
     }
 
