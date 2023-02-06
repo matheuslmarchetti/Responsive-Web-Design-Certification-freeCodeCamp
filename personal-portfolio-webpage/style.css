@@ -245,18 +245,17 @@ footer {
     }
 
     .dynamic-txts span {
-        display: flex ;
+        display: inline-flex ;
         position: relative;
         max-width: 100%;
         font-size: 0.5em;
     }
     .dynamic-txts span::after {
-        display: flex;
+        display: block;
     }
     @keyframes welcome {
         100% {
-            left: 100%;
-            margin-left: 5px;
+            left: 99%;
         }
     }
 
