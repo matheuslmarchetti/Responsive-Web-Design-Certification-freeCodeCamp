@@ -334,6 +334,9 @@ footer {
 }
 
 @media only screen and (max-width: 350px) {
+    * {
+        overflow-x: hidden;
+    }
     /* Header Configuration */
     header {
         max-width: 100%;
