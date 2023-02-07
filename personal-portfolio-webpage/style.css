@@ -214,7 +214,7 @@ footer {
         justify-content: space-around;
         align-items: center;
         top: 0;
-        width: 100%;
+        max-width: 100%;
         min-height: 70px;
         max-height: 70px;
     }
@@ -247,6 +247,11 @@ footer {
         height: 100px;
     }
 
+    .dynamic-txts {
+        max-width: 100%;
+        white-space: nowrap;
+    }
+
     .dynamic-txts span {
         display: inline-flex ;
         position: relative;
@@ -256,10 +261,13 @@ footer {
     .dynamic-txts span::after {
         display: block;
         animation: welcome 6s 1s steps(30) infinite normal;
+        max-width: 100%;
     }
     @keyframes welcome {
         100% {
             left: 100%;
+            margin: 0 -12px 0 12px;
+
         }
     }
 
@@ -321,6 +329,68 @@ footer {
         position: relative;
         width: 100%;
         bottom: 0;
+    }
+/* End Footer */
+}
+
+@media only screen and (max-width: 350px) {
+    /* Header Configuration */
+    header {
+        max-width: 100%;
+    }
+    /* Start Welcome Section */
+    .dynamic-txts {
+        max-width: 100%;
+        white-space: nowrap;
+        font-size: 20px;
+    }
+
+    .dynamic-txts span {
+        max-width: 100%;
+    }
+
+    .dynamic-txts span::after {
+        animation: welcome 6s 1s steps(30) infinite normal;
+    }
+
+    @keyframes welcome {
+        100% {
+            left: 100%;
+            margin: 0 -12px 0 12px;
+        }
+    }
+/* End Welcome Section */
+/* Start Projects Section */
+
+    #projects h2 {
+        font-size: 1.5em;
+    }
+
+    .grid-projects {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        max-width: 90%;
+    }
+
+    .img-projects {
+        max-width: 200px;
+    }
+
+    .project-tile {
+        font-size: 1rem;
+    }
+/* End Projects Section */
+/* Start Contact Section */
+    .contact-section-header {
+        font-size: 1.5em;
+    }
+    .contact-links ul li {
+        padding-bottom: 50px;
+    }
+/* End Contact Section */
+/* Start Footer */
+    footer {
+        max-width: 100%;
+        font-size: 12px;
     }
 /* End Footer */
 }
