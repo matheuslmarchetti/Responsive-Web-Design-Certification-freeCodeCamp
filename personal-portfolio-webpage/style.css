@@ -227,7 +227,7 @@ footer {
 
     #navbar {
         position: absolute;
-        right: 0;
+        right: 1%;
         animation: none;
     }
 
@@ -258,6 +258,7 @@ footer {
         max-width: 100%;
         font-size: 0.5em;
     }
+    
     .dynamic-txts span::after {
         display: block;
         animation: welcome 6s 1s steps(30) infinite normal;
@@ -270,7 +271,7 @@ footer {
 
         }
     }
-
+  
     #welcome-section > p {
         font-size: 0.9em;
     }
@@ -334,9 +335,6 @@ footer {
 }
 
 @media only screen and (max-width: 350px) {
-    * {
-        overflow-x: hidden;
-    }
     /* Header Configuration */
     header {
         max-width: 100%;
