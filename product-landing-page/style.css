@@ -26,6 +26,9 @@ body {
     height: 100px;
     position: relative;
 }
+#path404, #path406, #path408 {
+    fill: #ffffff;
+}
 
 #nav-bar {
     display: flex;
@@ -106,6 +109,15 @@ li {
 li > img {
     width: 35px;
     height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li > svg {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
