@@ -38,6 +38,10 @@ header {
     left: 1%;
 }
 
+#path404, #path406, #path408 {
+    fill: #ffffff;
+}
+
 #navbar {
     position: fixed;
     right: 5%;
