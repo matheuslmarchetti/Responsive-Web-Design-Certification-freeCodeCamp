@@ -1,7 +1,7 @@
 *{
     background-color: rgb(2, 2, 2);
     color: rgb(255, 255, 255);
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
 }
 
@@ -106,14 +106,6 @@ li {
     padding: 10px 0 10px 0;
 }
 
-li > img {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 li > svg {
     width: 35px;
     height: 35px;
@@ -189,13 +181,22 @@ footer > p > a {
 
 /*CSS MOBILE*/
 @media only screen and (max-width: 900px) {
+    #header-img {
+        width: 50px;
+        height: 50px;
+    }
     section {
         display: block;
         margin: auto;
     }
+    #div-video {
+        margin: 0 auto;
+    }
     #div-video > iframe {
         width: auto;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
     .Pricing {
         display: grid;
@@ -205,4 +206,52 @@ footer > p > a {
         margin-top: 50px;
         margin-bottom: 30px;
     }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        width: 300px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #header{
+        font-size: small;
+        width: auto;
+    }
+    #div-video > iframe {
+        width: 250px;
+    }
+    .product {
+        margin: 0 auto;
+        width: 300px;
+     }
+     footer {
+         font-size: 8pt;
+         width: 300px;
+     }
+}
+@media only screen and (max-width: 290px) {
+    body {
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    section {
+        display: block;
+        margin: auto;
+    }
+    #header{
+        font-size: 8pt;
+        width: auto;
+    }
+    #div-video > iframe {
+        width: 200px;
+    }
+    .product {
+        margin: 0 auto;
+        max-width: 250px;
+     }
+     footer {
+         font-size: 6pt;
+         max-width: 250px;
+     }
 }
