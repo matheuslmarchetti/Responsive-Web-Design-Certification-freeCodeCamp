@@ -15,7 +15,6 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 /* Header Configuration */
@@ -88,26 +87,23 @@ a:hover {
     border-radius: 50%;
 }
 
-.dynamic-txts span {
-    position: relative;
+.dynamic-txts {
+    border-right: 4px solid;
     color: var(--color-tertiary);
-}
-.dynamic-txts span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: var(--color-primary);
-    border-left: 2px solid var(--color-tertiary);
-    animation: welcome 6s 1s steps(40) infinite normal;
+    width: 40ch;
     white-space: nowrap;
+    overflow: hidden;
+    animation: typing 6s 1s steps(28), blinking 0.5s infinite step-end alternate;
 }
 
-@keyframes welcome {
-    100% {
-        left: 100%;
-        margin-left: 20px;
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blinking {
+    50% {
+        border-color: transparent;
     }
 }
 
@@ -338,31 +334,20 @@ footer {
 /* End Footer */
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 600px) {
     /* Header Configuration */
     header {
         max-width: 100%;
     }
     /* Start Welcome Section */
     .dynamic-txts {
-        max-width: 100%;
+        font-size: 10pt;
+        border-right: 4px solid;
+        color: var(--color-tertiary);
+        width: 40ch;
         white-space: nowrap;
-        font-size: 20px;
-    }
-
-    .dynamic-txts span {
-        max-width: 100%;
-    }
-
-    .dynamic-txts span::after {
-        animation: welcome 6s 1s steps(30) infinite normal;
-    }
-
-    @keyframes welcome {
-        100% {
-            left: 100%;
-            margin: 0 -12px 0 12px;
-        }
+        overflow: hidden;
+        animation: typing 6s 1s steps(28), blinking 0.5s infinite step-end alternate;
     }
 /* End Welcome Section */
 /* Start Projects Section */
@@ -398,4 +383,21 @@ footer {
         font-size: 12px;
     }
 /* End Footer */
+}
+@media only screen and (max-width: 300px) {
+    /* Header Configuration */
+    header {
+        max-width: 100%;
+    }
+    /* Start Welcome Section */
+    .dynamic-txts {
+        font-size: 6pt;
+        border-right: 4px solid;
+        color: var(--color-tertiary);
+        width: 48ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 6s 1s steps(28), blinking 0.5s infinite step-end alternate;
+    }
+/* End Welcome Section */
 }
