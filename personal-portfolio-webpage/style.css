@@ -82,18 +82,22 @@ a:hover {
 }
 
 .profile-picture {
+    margin-top: 20px;
     max-width: 200px;
     height: auto;
     border-radius: 50%;
 }
-
+.hello {
+    color: white;
+}
 .dynamic-txts {
-    border-right: 4px solid;
+    display: block;
+    width: 260px;
+    border-right: 2px solid;
     color: var(--color-tertiary);
-    width: 40ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 6s 1s steps(28), blinking 0.5s infinite step-end alternate;
+    animation: typing 2s steps(10, end), blinking 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -204,10 +208,6 @@ footer {
 /* End Footer */
 /*CSS MOBILE*/
 @media only screen and (max-width: 900px) {
-    body {
-        overflow-x: hidden;
-    }
-    /* Header Configuration */
     header {
         display: flex;
         position: fixed;
@@ -236,7 +236,6 @@ footer {
         font-size: 1em;
         cursor: pointer;
     }
-    /* Start Welcome Section */
     #welcome-section {
         padding-top: 150px;
         height: calc(100% - 100px);
@@ -247,36 +246,9 @@ footer {
         height: 100px;
     }
 
-    .dynamic-txts {
-        max-width: 100%;
-        white-space: nowrap;
-    }
-
-    .dynamic-txts span {
-        display: inline-flex ;
-        position: relative;
-        max-width: 100%;
-        font-size: 0.5em;
-    }
-    
-    .dynamic-txts span::after {
-        display: block;
-        animation: welcome 6s 1s steps(30) infinite normal;
-        max-width: 100%;
-    }
-    @keyframes welcome {
-        100% {
-            left: 100%;
-            margin: 0 -12px 0 12px;
-
-        }
-    }
-  
     #welcome-section > p {
         font-size: 0.9em;
     }
-/* End Welcome Section */
-/* Start Projects Section */
     #projects {
         display: flex;
         position: relative;
@@ -302,8 +274,6 @@ footer {
     .project-tile {
         font-size: 1.2rem;
     }
-/* End Projects Section */
-/* Start Contact Section */
     #contact {
         display: flex;
         position: relative;
@@ -321,8 +291,6 @@ footer {
     .icons {
         max-width: 30px;
     }
-/* End Contact Section */
-/* Start Footer */
     footer {
         display: flex;
         flex-direction: row;
@@ -331,73 +299,65 @@ footer {
         width: 100%;
         bottom: 0;
     }
-/* End Footer */
 }
 
 @media only screen and (max-width: 600px) {
-    /* Header Configuration */
-    header {
-        max-width: 100%;
-    }
-    /* Start Welcome Section */
-    .dynamic-txts {
-        font-size: 10pt;
-        border-right: 4px solid;
-        color: var(--color-tertiary);
-        width: 40ch;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typing 6s 1s steps(28), blinking 0.5s infinite step-end alternate;
-    }
-/* End Welcome Section */
-/* Start Projects Section */
-
     #projects h2 {
         font-size: 1.5em;
     }
 
     .grid-projects {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
-        max-width: 90%;
-    }
-
-    .img-projects {
-        max-width: 200px;
     }
 
     .project-tile {
         font-size: 1rem;
     }
-/* End Projects Section */
-/* Start Contact Section */
     .contact-section-header {
         font-size: 1.5em;
     }
     .contact-links ul li {
         padding-bottom: 50px;
     }
-/* End Contact Section */
-/* Start Footer */
     footer {
-        max-width: 100%;
         font-size: 12px;
     }
-/* End Footer */
 }
 @media only screen and (max-width: 300px) {
-    /* Header Configuration */
-    header {
-        max-width: 100%;
+    html {
+        margin: 0;
+        padding: 0;
     }
-    /* Start Welcome Section */
+    .logo {
+        width: 50px;
+        height: 50px;
+        padding-left: 10px;
+    }
+    #navbar {
+        font-size: 10pt;
+        padding-right: 10px;
+    }
     .dynamic-txts {
-        font-size: 6pt;
-        border-right: 4px solid;
+        font-size: 10pt;
+        display: block;
+        width: 215px;
+        border-right: 2px solid;
         color: var(--color-tertiary);
-        width: 48ch;
         white-space: nowrap;
         overflow: hidden;
-        animation: typing 6s 1s steps(28), blinking 0.5s infinite step-end alternate;
+        animation: typing 2s steps(10, end), blinking 0.5s step-end infinite alternate;
     }
-/* End Welcome Section */
+    .grid-projects {
+        max-width: 250px;
+    }
+    .link-projects, .img-projects {
+        width: 250px;
+    }
+    .contact-section-header, #projects > h2 {
+        font-size: 16pt;
+        max-width: 275px;
+    }
+    footer > p {
+        font-size: smaller;
+    }
 }
