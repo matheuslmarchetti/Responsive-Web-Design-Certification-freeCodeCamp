@@ -1,5 +1,5 @@
 # Responsive-Web-Design-Certification-freeCodeCamp
- <h1>Projects in HTML5 and CSS3 for Responsive Web Design Certification freeCodeCamp</h1>
+ <h2>Projects in HTML5 and CSS3 for Responsive Web Design Certification freeCodeCamp</h2>
  <p>This repository contains projects develop starting about my studies during the course Responsive Web Design Certification in the freeCodeCamp.org</p>
  <p>ATTENTION! The projects can contain difference in relation to projects in my profile in the freeCodeCamp.org, due to updates make for me with the evolution in my studies.</p>
  <p>Below are links to view the projects.</p>
